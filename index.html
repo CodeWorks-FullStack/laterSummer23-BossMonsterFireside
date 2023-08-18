@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Boss Monster</title>
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+
+<body class="container-fluid bg-greenbelt">
+
+  <!-- SECTION this will be all the hero information (health bar, money, backpack, and companion purchase options) -->
+  <header class="row mb-5 justify-content-between">
+
+    <!-- STUB Hero stats go here -->
+    <div class="col-md-3">
+      <div class="row text-center">
+        <div class="col-12" id="heroStats">
+          <!-- <h4>Greenbelt Gary</h4>
+          <img src="./assets/gary.gif" alt="">
+          <p>Health: <span>100</span></p>
+          <p> Money: <span>0</span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- STUB Purchase companions will go here -->
+    <div class="col-md-6 d-flex flex-column">
+      <!-- NOTE this is the button activating ONLY buy dog -->
+      <!-- <button class="btn btn-primary" onclick="buyDog()">Buy Friendly Neighborhood Dog</button> -->
+
+      <!-- NOTE these are my refactored code buttons -->
+      <button class="btn btn-primary mb-2 mt-2" onclick="buyCompanion('friendly neighborhood dog')">Friendly
+        Neighborhood
+        Dog</button>
+      <button class="btn btn-primary mb-2" onclick="buyCompanion('greenbelt skateboarder')">Greenbelt
+        Skateboarder</button>
+      <button class="btn btn-primary" onclick="buyCompanion('guy with snacks')">Guy with Snacks</button>
+    </div>
+
+  </header>
+
+  <!-- SECTION main stage for boss battle will have hero image and boss image -->
+  <main class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="row text-center justify-content-center align-items-center">
+
+        <!-- STUB Hero draws here -->
+        <div class="col-md-5" id="hero">
+          <!-- <p>Greenbelt Gary</p>
+          <img src="./assets/gary.gif" alt=""> -->
+        </div>
+
+        <!-- STUB Goose draws here -->
+        <div class="col-md-5" id="boss">
+          <!-- <p>Evil Goose</p>
+          <img src="./assets/goose.gif" alt=""> -->
+        </div>
+      </div>
+
+      <div class="row" id="companion">
+        <!-- STUB Companions draw here -->
+        <!-- <div class="col-md-3" id="friendlyNeighborhoodDog"> -->
+        <!-- <div class="col-md-3"> -->
+        <!-- <p>Friendly Neighborhood Dog</p>
+          <img src="assets/dog.gif" alt=""> -->
+        <!-- </div> -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SECTION boss health information -->
+  <footer class="row justify-content-center">
+    <div class="col-md-7 text-center" id="bossStats">
+      <!-- <h4>Evil Goose</h4>
+      <p>Health: <span>100</span></p> -->
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+
+</html>

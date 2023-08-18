@@ -1,0 +1,28 @@
+.bg-greenbelt {
+  background-image: url(/assets/greenbelt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+p {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-weight: bold;
+}
+
+h4 {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+.goose {
+  height: 100px;
+  width: 87px;
+}
+
+.gary {
+  height: 250px;
+  width: 160px;
+}
